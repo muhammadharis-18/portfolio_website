@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Muhammad Haris</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Haris</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container about-layout">
+      <div class="left-heading animate-left">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="center-paragraph animate-up">
+        <p>
+          I’m Muhammad Haris, a passionate front-end developer specializing in building clean, responsive, and fully functional websites using HTML and CSS.
+          I help individuals and small businesses bring their ideas online by crafting multi-page websites that are user-friendly and mobile-ready.
+          My mission is to provide simple, elegant code that delivers strong online presence — whether it's a portfolio, landing page, or business website.
+        </p>
+      </div>
+
+      <div class="bottom-section animate-fade">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Responsive Multi-Page Website Design</li>
+          <li>Basic C++ and Python</li>
+          <li>GitHub Deployment</li>
+          <li>Website Optimization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Haris. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-left, .animate-up, .animate-fade').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

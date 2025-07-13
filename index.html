@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Muhammad Haris</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Haris</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container contact-layout">
+      <div class="left-heading animate-left">
+        <h2>Welcome</h2>
+      </div>
+
+      <div class="center-paragraph animate-up">
+        <p>
+          I'm Muhammad Haris, a front-end web developer who builds clean, modern, multi-page websites using HTML and CSS.
+          I help businesses and individuals create stunning and responsive websites that work on all devices.
+        </p>
+      </div>
+
+      <div class="bottom-section animate-fade">
+        <h3>Explore My Work</h3>
+        <div class="button-group">
+          <a href="about.html" class="btn btn-secondary">Explore</a>
+          <a href="contact.html" class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Haris. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-left, .animate-up, .animate-fade').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

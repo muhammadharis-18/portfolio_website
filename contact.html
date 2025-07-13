@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Muhammad Haris</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Haris</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container contact-layout">
+      <div class="left-heading animate-left">
+        <h2>Let’s Connect</h2>
+      </div>
+
+      <div class="center-paragraph animate-up">
+        <p>
+          Have a project in mind or just want to say hello?<br>
+          Feel free to get in touch with me through the following platforms:
+        </p>
+      </div>
+
+      <div class="bottom-section animate-fade">
+        <h3>Email</h3>
+        <p><a href="mailto:muhammadharisrasheed5@gmail.com" style="color:#00d1d1">muhammadharisrasheed5@gmail.com</a></p>
+        <h3>Instagram</h3>
+        <p><a href="https://instagram.com/m_haris_17" target="_blank" style="color:#00d1d1">@m_haris_17</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Haris. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-left, .animate-up, .animate-fade').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

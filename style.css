@@ -1,0 +1,336 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #00d1d1;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00d1d1;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)),
+                url(assets/hero-bg.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+  }
+  
+  .contact {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .contact-content h2 {
+    font-size: 36px;
+    color: #00d1d1;
+    margin-bottom: 20px;
+  }
+  
+  .contact-content p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .contact-links a {
+    color: #00d1d1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: transparent;
+    border: 2px solid #00d1d1;
+
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #00d1d1;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 209, 209, 0.3);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #888;
+  }
+  .hero-content {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 15px;
+  }
+  
+  .highlight {
+    color: #00d1d1;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #cccccc;
+  }
+  
+  .contact {
+    min-height: 100vh;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)),
+                url(assets/hero-bg.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-layout {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .left-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .left-heading h2 {
+    font-size: 36px;
+    color: #00d1d1;
+    margin: 0;
+  }
+  
+  .center-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 60px;
+  }
+  
+  .bottom-contact {
+    margin-top: 20px;
+  }
+  
+  .bottom-contact p {
+    font-size: 17px;
+    margin: 8px 0;
+  }
+  
+  .bottom-contact a {
+    color: #00d1d1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .bottom-contact a:hover {
+    text-decoration: underline;
+  }
+  .about {
+    min-height: 100vh;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)),
+                url(assets/hero-bg.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .about-layout {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .left-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .left-heading h2 {
+    font-size: 36px;
+    color: #00d1d1;
+    margin: 0;
+  }
+  
+  .center-paragraph p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-top: 60px;
+  }
+  
+  .bottom-section h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    color: #cccccc;
+    font-size: 16px;
+  }
+  
+  .skills-list li {
+    margin-bottom: 10px;
+  }
+ /* === Animation Base === */
+.animate-left,
+.animate-up,
+.animate-fade {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+/* === Animate on Scroll === */
+.show.animate-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.show.animate-up {
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.show.animate-fade {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+/* === Keyframes === */
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+  
